@@ -89,7 +89,7 @@
       "description": {
         "Package": "bslib",
         "Title": "Custom 'Bootstrap' 'Sass' Themes for 'shiny' and 'rmarkdown'",
-        "Version": "0.8.0",
+        "Version": "0.9.0",
         "Authors@R": "c(\n    person(\"Carson\", \"Sievert\", , \"carson@posit.co\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"0000-0002-4958-2844\")),\n    person(\"Joe\", \"Cheng\", , \"joe@posit.co\", role = \"aut\"),\n    person(\"Garrick\", \"Aden-Buie\", , \"garrick@posit.co\", role = \"aut\",\n           comment = c(ORCID = \"0000-0002-7111-0077\")),\n    person(\"Posit Software, PBC\", role = c(\"cph\", \"fnd\")),\n    person(, \"Bootstrap contributors\", role = \"ctb\",\n           comment = \"Bootstrap library\"),\n    person(, \"Twitter, Inc\", role = \"cph\",\n           comment = \"Bootstrap library\"),\n    person(\"Javi\", \"Aguilar\", role = c(\"ctb\", \"cph\"),\n           comment = \"Bootstrap colorpicker library\"),\n    person(\"Thomas\", \"Park\", role = c(\"ctb\", \"cph\"),\n           comment = \"Bootswatch library\"),\n    person(, \"PayPal\", role = c(\"ctb\", \"cph\"),\n           comment = \"Bootstrap accessibility plugin\")\n  )",
         "Description": "Simplifies custom 'CSS' styling of both 'shiny' and\n    'rmarkdown' via 'Bootstrap' 'Sass'. Supports 'Bootstrap' 3, 4 and 5 as\n    well as their various 'Bootswatch' themes. An interactive widget is\n    also provided for previewing themes in real time.",
         "License": "MIT + file LICENSE",
@@ -97,8 +97,8 @@
         "BugReports": "https://github.com/rstudio/bslib/issues",
         "Depends": "R (>= 2.10)",
         "Imports": "base64enc, cachem, fastmap (>= 1.1.1), grDevices, htmltools\n(>= 0.5.8), jquerylib (>= 0.1.3), jsonlite, lifecycle, memoise\n(>= 2.0.1), mime, rlang, sass (>= 0.4.9)",
-        "Suggests": "bsicons, curl, fontawesome, future, ggplot2, knitr, magrittr,\nrappdirs, rmarkdown (>= 2.7), shiny (> 1.8.1), testthat,\nthematic, withr",
-        "Config/Needs/deploy": "BH, chiflights22, colourpicker, commonmark, cpp11,\ncpsievert/chiflights22, cpsievert/histoslider, dplyr, DT,\nggplot2, ggridges, gt, hexbin, histoslider, htmlwidgets,\nlattice, leaflet, lubridate, modelr, plotly, reactable,\nreshape2, rprojroot, rsconnect, rstudio/shiny, scales, styler,\ntibble",
+        "Suggests": "bsicons, curl, fontawesome, future, ggplot2, knitr, magrittr,\nrappdirs, rmarkdown (>= 2.7), shiny (> 1.8.1), testthat,\nthematic, tools, utils, withr, yaml",
+        "Config/Needs/deploy": "BH, chiflights22, colourpicker, commonmark, cpp11,\ncpsievert/chiflights22, cpsievert/histoslider, dplyr, DT,\nggplot2, ggridges, gt, hexbin, histoslider, htmlwidgets,\nlattice, leaflet, lubridate, markdown, modelr, plotly,\nreactable, reshape2, rprojroot, rsconnect, rstudio/shiny,\nscales, styler, tibble",
         "Config/Needs/routine": "chromote, desc, renv",
         "Config/Needs/website": "brio, crosstalk, dplyr, DT, ggplot2, glue,\nhtmlwidgets, leaflet, lorem, palmerpenguins, plotly, purrr,\nrprojroot, rstudio/htmltools, scales, stringr, tidyr, webshot2",
         "Config/testthat/edition": "3",
@@ -106,14 +106,14 @@
         "Config/testthat/start-first": "zzzz-bs-sass, fonts, zzz-precompile,\ntheme-*, rmd-*",
         "Encoding": "UTF-8",
         "RoxygenNote": "7.3.2",
-        "Collate": "'accordion.R' 'breakpoints.R' 'bs-current-theme.R'\n'bs-dependencies.R' 'bs-global.R' 'bs-remove.R'\n'bs-theme-layers.R' 'bs-theme-preset-bootswatch.R'\n'bs-theme-preset-builtin.R' 'bs-theme-preset.R' 'utils.R'\n'bs-theme-preview.R' 'bs-theme-update.R' 'bs-theme.R'\n'bslib-package.R' 'buttons.R' 'card.R' 'deprecated.R' 'files.R'\n'fill.R' 'imports.R' 'input-dark-mode.R' 'input-switch.R'\n'layout.R' 'nav-items.R' 'nav-update.R' 'navs-legacy.R'\n'navs.R' 'onLoad.R' 'page.R' 'popover.R' 'precompiled.R'\n'print.R' 'shiny-devmode.R' 'sidebar.R' 'staticimports.R'\n'tooltip.R' 'utils-deps.R' 'utils-shiny.R' 'utils-tags.R'\n'value-box.R' 'version-default.R' 'versions.R'",
+        "Collate": "'accordion.R' 'breakpoints.R' 'bs-current-theme.R'\n'bs-dependencies.R' 'bs-global.R' 'bs-remove.R'\n'bs-theme-layers.R' 'bs-theme-preset-bootswatch.R'\n'bs-theme-preset-brand.R' 'bs-theme-preset-builtin.R'\n'bs-theme-preset.R' 'utils.R' 'bs-theme-preview.R'\n'bs-theme-update.R' 'bs-theme.R' 'bslib-package.R' 'buttons.R'\n'card.R' 'deprecated.R' 'files.R' 'fill.R' 'imports.R'\n'input-dark-mode.R' 'input-switch.R' 'layout.R' 'nav-items.R'\n'nav-update.R' 'navbar_options.R' 'navs-legacy.R' 'navs.R'\n'onLoad.R' 'page.R' 'popover.R' 'precompiled.R' 'print.R'\n'shiny-devmode.R' 'sidebar.R' 'staticimports.R' 'tooltip.R'\n'utils-deps.R' 'utils-shiny.R' 'utils-tags.R' 'value-box.R'\n'version-default.R' 'versions.R'",
         "NeedsCompilation": "no",
-        "Packaged": "2024-07-29 18:49:12 UTC; cpsievert",
+        "Packaged": "2025-01-30 22:04:52 UTC; garrick",
         "Author": "Carson Sievert [aut, cre] (<https://orcid.org/0000-0002-4958-2844>),\n  Joe Cheng [aut],\n  Garrick Aden-Buie [aut] (<https://orcid.org/0000-0002-7111-0077>),\n  Posit Software, PBC [cph, fnd],\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Javi Aguilar [ctb, cph] (Bootstrap colorpicker library),\n  Thomas Park [ctb, cph] (Bootswatch library),\n  PayPal [ctb, cph] (Bootstrap accessibility plugin)",
         "Maintainer": "Carson Sievert <carson@posit.co>",
-        "Repository": "CRAN",
-        "Date/Publication": "2024-07-29 19:20:02 UTC",
-        "Built": "R 4.4.1; ; 2024-08-02 01:44:34 UTC; windows"
+        "Repository": "RSPM",
+        "Date/Publication": "2025-01-30 23:20:02 UTC",
+        "Built": "R 4.4.0; ; 2025-01-31 11:45:37 UTC; windows"
       }
     },
     "cachem": {
@@ -859,7 +859,7 @@
   },
   "files": {
     "app.R": {
-      "checksum": "7a6be542ae1e2b41d97a75044fa1e65c"
+      "checksum": "e57684ac9292f47ffcab1fbddb04f6dd"
     }
   },
   "users": null
